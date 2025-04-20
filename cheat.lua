@@ -3,8 +3,7 @@ repeat task.wait() until getgenv().ExunysDeveloperAimbot
 local Aimbot = getgenv().ExunysDeveloperAimbot
 
 -- Fluent yükle
-local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/andrewffi/fluent/main/library.lua"))()
-
+local Fluent = loadstring(game:HttpGet("https://raw.githubusercontent.com/ElagonDev/Fluent/main/source.lua"))()
 local Window = Library:Window({
     Title = "Aimbot Settings",
     SubTitle = "Fluent UI",
