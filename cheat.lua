@@ -2,9 +2,9 @@
 repeat task.wait() until getgenv().ExunysDeveloperAimbot
 local Aimbot = getgenv().ExunysDeveloperAimbot
 
--- Fluent yükle
+-- Fluent UI'yi yükle
 local Fluent = loadstring(game:HttpGet("https://raw.githubusercontent.com/ElagonDev/Fluent/main/source.lua"))()
-local Window = Library:Window({
+local Window = Fluent:CreateWindow({
     Title = "Aimbot Settings",
     SubTitle = "Fluent UI",
     TabWidth = 160,
@@ -14,7 +14,7 @@ local Window = Library:Window({
     MinimizeKey = Enum.KeyCode.RightShift
 })
 
-local AimbotTab = Window:Tab({Title = "Aimbot", Icon = "🎯"})
+local AimbotTab = Window:AddTab({Title = "Aimbot", Icon = "🎯"})
 
 -- Ayarlar sekmesi
 AimbotTab:Toggle({
